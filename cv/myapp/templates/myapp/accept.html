@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-light">
+    
+   <div class="container   ">
+    
+    <div class="row">
+        <div class="col-md-6 card my-4 ">
+            <div><h1 class="text-center ">CV Generator</h1></div>
+            <form class="card-header" method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone No</label>
+                  <input type="number" class="form-control" id="phone" name="phone" />
+                </div>
+                <div class="mb-3">
+                  <label for="summary" class="form-label">About You</label>
+                  <textarea
+                    class="form-control"
+                    id="summary"
+                    rows="3"
+                    name="summary"
+                  ></textarea>
+                </div>
+          
+                <div class="mb-3">
+                  <label for="education" class="form-label">Education</label>
+                  <textarea
+                    class="form-control"
+                    id="education"
+                    rows="3"
+                    name="education"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="experience" class="form-label">Experience</label>
+                  <textarea
+                    class="form-control"
+                    id="experience"
+                    rows="3"
+                    name="experience"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="project" class="form-label">Project</label>
+                  <textarea
+                    class="form-control"
+                    id="project"
+                    rows="3"
+                    name="project"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="certificate" class="form-label">Certificate</label>
+                  <textarea
+                    class="form-control"
+                    id="certificate"
+                    rows="3"
+                    name="certificate"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="career_objective" class="form-label">Career Objective</label>
+                  <textarea
+                    class="form-control"
+                    id="career_objective"
+                    rows="3"
+                    name="career_objective"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="skill" class="form-label">Skill</label>
+                    <textarea
+                      class="form-control"
+                      id="skill"
+                      rows="3"
+                      name="skill"
+                    ></textarea>
+                  </div>
+          
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
